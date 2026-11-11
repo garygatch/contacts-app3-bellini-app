@@ -1,0 +1,383 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "evaluate": false,
+                      "name": "text",
+                      "textContent": "👥 Contacts"
+                    }
+                  ],
+                  "classList": [],
+                  "layout": {
+                    "cell": {
+                      "growFactor": 1,
+                      "mainSize": "100%",
+                      "shrinkFactor": 1,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "h2",
+                  "styles": [
+                    {
+                      "enabled": true,
+                      "property": "display",
+                      "value": "flex"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "align-items",
+                      "value": "center"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "gap",
+                      "value": "8px"
+                    }
+                  ]
+                },
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'Add New'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "'primary'",
+                      "to": "type"
+                    },
+                    {
+                      "expression": "$ctrl.goToNew()",
+                      "to": "onClick"
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "max-content",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Button",
+                  "nodeName": "bln-button",
+                  "type": "core-component"
+                }
+              ],
+              "classList": [
+                "sidebar-header"
+              ],
+              "layout": {
+                "cell": {
+                  "growFactor": 0,
+                  "mainSize": "max-content",
+                  "shrinkFactor": 0,
+                  "type": "box-item"
+                },
+                "container": {
+                  "crossAxisAlignment": "center",
+                  "mainAxisAlignment": "flex-start",
+                  "orientation": "row",
+                  "type": "box"
+                }
+              },
+              "name": "div"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "evaluate": true,
+                          "name": "text",
+                          "textContent": "(contact.name || '').charAt(0)"
+                        }
+                      ],
+                      "classList": [
+                        "avatar"
+                      ],
+                      "layout": {
+                        "cell": {
+                          "growFactor": 0,
+                          "mainSize": "40px",
+                          "shrinkFactor": 0,
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "div"
+                    },
+                    {
+                      "children": [
+                        {
+                          "evaluate": true,
+                          "name": "text",
+                          "textContent": "contact.name"
+                        }
+                      ],
+                      "classList": [
+                        "contact-name"
+                      ],
+                      "layout": {
+                        "cell": {
+                          "growFactor": 1,
+                          "mainSize": "auto",
+                          "shrinkFactor": 1,
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "div"
+                    },
+                    {
+                      "children": [
+                        {
+                          "evaluate": false,
+                          "name": "text",
+                          "textContent": "›"
+                        }
+                      ],
+                      "classList": [],
+                      "comments": "Subtle chevron indicating clickability",
+                      "layout": {
+                        "cell": {
+                          "growFactor": 0,
+                          "mainSize": "max-content",
+                          "shrinkFactor": 0,
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "div",
+                      "styles": [
+                        {
+                          "enabled": true,
+                          "property": "color",
+                          "value": "#9ca3af"
+                        },
+                        {
+                          "enabled": true,
+                          "property": "font-size",
+                          "value": "16px"
+                        },
+                        {
+                          "enabled": true,
+                          "property": "margin-left",
+                          "value": "8px"
+                        }
+                      ]
+                    }
+                  ],
+                  "classList": [
+                    "contact-item"
+                  ],
+                  "conditionalClasses": [
+                    {
+                      "className": "active",
+                      "condition": "$ctrl.pageParameters.id === contact.id"
+                    }
+                  ],
+                  "events": {
+                    "click": "$ctrl.goToDetails(contact.id)"
+                  },
+                  "iterate": {
+                    "array": "$ctrl.contacts",
+                    "variable": "contact"
+                  },
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "max-content",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    },
+                    "container": {
+                      "crossAxisAlignment": "center",
+                      "mainAxisAlignment": "flex-start",
+                      "orientation": "row",
+                      "type": "box"
+                    }
+                  },
+                  "name": "div",
+                  "styles": [
+                    {
+                      "enabled": true,
+                      "property": "cursor",
+                      "value": "pointer"
+                    }
+                  ]
+                }
+              ],
+              "classList": [
+                "contact-list"
+              ],
+              "layout": {
+                "cell": {
+                  "growFactor": 1,
+                  "mainSize": "100%",
+                  "shrinkFactor": 1,
+                  "type": "box-item"
+                },
+                "container": {
+                  "crossAxisAlignment": "stretch",
+                  "mainAxisAlignment": "flex-start",
+                  "orientation": "column",
+                  "type": "box"
+                }
+              },
+              "name": "div"
+            }
+          ],
+          "classList": [
+            "sidebar"
+          ],
+          "layout": {
+            "cell": {
+              "growFactor": 0,
+              "mainSize": "320px",
+              "shrinkFactor": 0,
+              "type": "box-item"
+            },
+            "container": {
+              "crossAxisAlignment": "stretch",
+              "mainAxisAlignment": "flex-start",
+              "orientation": "column",
+              "type": "box"
+            }
+          },
+          "name": "div"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "classList": [],
+              "layout": {
+                "cell": {
+                  "growFactor": 1,
+                  "mainSize": "auto",
+                  "shrinkFactor": 1,
+                  "type": "box-item"
+                }
+              },
+              "name": "child-pages",
+              "type": "page-container"
+            }
+          ],
+          "classList": [
+            "main-content"
+          ],
+          "layout": {
+            "cell": {
+              "growFactor": 1,
+              "mainSize": "auto",
+              "shrinkFactor": 1,
+              "type": "box-item"
+            },
+            "container": {
+              "crossAxisAlignment": "stretch",
+              "mainAxisAlignment": "flex-start",
+              "orientation": "column",
+              "type": "box"
+            }
+          },
+          "name": "div"
+        }
+      ],
+      "classList": [
+        "app-layout"
+      ],
+      "layout": {
+        "container": {
+          "crossAxisAlignment": "stretch",
+          "mainAxisAlignment": "flex-start",
+          "orientation": "row",
+          "type": "box"
+        }
+      },
+      "name": "div",
+      "styles": [
+        {
+          "enabled": true,
+          "property": "min-height",
+          "value": "100vh"
+        },
+        {
+          "enabled": true,
+          "property": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "name": "contacts",
+  "params": {},
+  "type": "page",
+  "url": "/contacts",
+  "variables": [
+    {
+      "name": "$state",
+      "type": "service"
+    },
+    {
+      "description": "List of mock contacts",
+      "name": "contacts",
+      "type": "property",
+      "value": "[]"
+    },
+    {
+      "body": "var stored = localStorage.getItem('contacts');\n// Seed the database with Harry Potter characters if empty, or if the old John Doe mock data is found.\nif (!stored || stored === '[]' || stored.indexOf('John Doe') !== -1) {\n  var defaultContacts = [\n    { id: '1', name: 'Harry Potter', phone: '555-0001', email: 'harry@hogwarts.edu', address: '4 Privet Drive, Little Whinging' },\n    { id: '2', name: 'Hermione Granger', phone: '555-0002', email: 'hermione@hogwarts.edu', address: 'Granger House, Heathgate' },\n    { id: '3', name: 'Ron Weasley', phone: '555-0003', email: 'ron@hogwarts.edu', address: 'The Burrow, Ottery St Catchpole' },\n    { id: '4', name: 'Albus Dumbledore', phone: '555-0004', email: 'albus@hogwarts.edu', address: 'Headmaster Office, Hogwarts' },\n    { id: '5', name: 'Severus Snape', phone: '555-0005', email: 'severus@hogwarts.edu', address: 'Spinners End, Cokeworth' },\n    { id: '6', name: 'Rubeus Hagrid', phone: '555-0006', email: 'hagrid@hogwarts.edu', address: 'Hagrid Hut, Hogwarts Grounds' },\n    { id: '7', name: 'Draco Malfoy', phone: '555-0007', email: 'draco@slytherin.edu', address: 'Malfoy Manor, Wiltshire' },\n    { id: '8', name: 'Sirius Black', phone: '555-0008', email: 'sirius@orderofthephoenix.org', address: '12 Grimmauld Place, London' },\n    { id: '9', name: 'Neville Longbottom', phone: '555-0009', email: 'neville@hogwarts.edu', address: 'Longbottom Manor' },\n    { id: '10', name: 'Luna Lovegood', phone: '555-0010', email: 'luna@quibbler.com', address: 'The Rookery, Ottery St Catchpole' },\n    { id: '11', name: 'Minerva McGonagall', phone: '555-0011', email: 'minerva@hogwarts.edu', address: 'Transfiguration Dept, Hogwarts' },\n    { id: '12', name: 'Bellatrix Lestrange', phone: '555-0012', email: 'bellatrix@deatheaters.com', address: 'Azkaban Prison, North Sea' }\n  ];\n  localStorage.setItem('contacts', JSON.stringify(defaultContacts));\n}\n$ctrl.contacts = JSON.parse(localStorage.getItem('contacts'));",
+      "description": "Loads mock contacts into the list",
+      "invokeOnLoad": true,
+      "isAsync": false,
+      "name": "loadContacts",
+      "parameters": [],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": []
+    },
+    {
+      "body": "$ctrl.$state.go('contacts.contact-details', { id: String(contactId) });",
+      "description": "Navigates to the details child page",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "goToDetails",
+      "parameters": [
+        "contactId"
+      ],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": []
+    },
+    {
+      "body": "$ctrl.$state.go('contacts.contact-new');",
+      "description": "Navigates to the new contact child page",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "goToNew",
+      "parameters": [],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": []
+    }
+  ]
+}

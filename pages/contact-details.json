@@ -1,0 +1,610 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'⟵ Back'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "'default'",
+                      "to": "type"
+                    },
+                    {
+                      "expression": "$ctrl.goBack()",
+                      "to": "onClick"
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Button",
+                  "nodeName": "bln-button",
+                  "type": "core-component"
+                }
+              ],
+              "classList": [],
+              "layout": {
+                "cell": {
+                  "type": "box-item"
+                },
+                "container": {
+                  "mainAxisAlignment": "flex-start",
+                  "orientation": "row",
+                  "type": "box"
+                }
+              },
+              "name": "div"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "evaluate": true,
+                          "name": "text",
+                          "textContent": "($ctrl.contact.name || '').charAt(0)"
+                        }
+                      ],
+                      "classList": [
+                        "avatar",
+                        "avatar-lg"
+                      ],
+                      "layout": {
+                        "cell": {
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "div"
+                    },
+                    {
+                      "children": [
+                        {
+                          "evaluate": true,
+                          "name": "text",
+                          "textContent": "$ctrl.contact.name"
+                        }
+                      ],
+                      "classList": [],
+                      "layout": {
+                        "cell": {
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "h1",
+                      "styles": [
+                        {
+                          "enabled": true,
+                          "property": "margin-top",
+                          "value": "0"
+                        },
+                        {
+                          "enabled": true,
+                          "property": "margin-bottom",
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "evaluate": false,
+                          "name": "text",
+                          "textContent": "Contact Profile"
+                        }
+                      ],
+                      "classList": [],
+                      "layout": {
+                        "cell": {
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "p",
+                      "styles": [
+                        {
+                          "enabled": true,
+                          "property": "margin-top",
+                          "value": "0"
+                        },
+                        {
+                          "enabled": true,
+                          "property": "color",
+                          "value": "#666"
+                        }
+                      ]
+                    }
+                  ],
+                  "classList": [
+                    "profile-header"
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "box-item"
+                    },
+                    "container": {
+                      "crossAxisAlignment": "center",
+                      "gap": "8px",
+                      "orientation": "column",
+                      "type": "box"
+                    }
+                  },
+                  "name": "div"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "evaluate": false,
+                              "name": "text",
+                              "textContent": "PHONE"
+                            }
+                          ],
+                          "classList": [
+                            "info-label"
+                          ],
+                          "layout": {
+                            "cell": {
+                              "type": "box-item"
+                            }
+                          },
+                          "name": "div"
+                        },
+                        {
+                          "children": [
+                            {
+                              "evaluate": true,
+                              "name": "text",
+                              "textContent": "$ctrl.contact.phone"
+                            }
+                          ],
+                          "classList": [
+                            "info-value"
+                          ],
+                          "layout": {
+                            "cell": {
+                              "type": "box-item"
+                            }
+                          },
+                          "name": "div"
+                        }
+                      ],
+                      "classList": [
+                        "info-item"
+                      ],
+                      "layout": {
+                        "cell": {
+                          "type": "box-item"
+                        },
+                        "container": {
+                          "orientation": "column",
+                          "type": "box"
+                        }
+                      },
+                      "name": "div"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "evaluate": false,
+                              "name": "text",
+                              "textContent": "EMAIL"
+                            }
+                          ],
+                          "classList": [
+                            "info-label"
+                          ],
+                          "layout": {
+                            "cell": {
+                              "type": "box-item"
+                            }
+                          },
+                          "name": "div"
+                        },
+                        {
+                          "children": [
+                            {
+                              "evaluate": true,
+                              "name": "text",
+                              "textContent": "$ctrl.contact.email"
+                            }
+                          ],
+                          "classList": [
+                            "info-value"
+                          ],
+                          "layout": {
+                            "cell": {
+                              "type": "box-item"
+                            }
+                          },
+                          "name": "div"
+                        }
+                      ],
+                      "classList": [
+                        "info-item"
+                      ],
+                      "layout": {
+                        "cell": {
+                          "type": "box-item"
+                        },
+                        "container": {
+                          "orientation": "column",
+                          "type": "box"
+                        }
+                      },
+                      "name": "div"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "evaluate": false,
+                              "name": "text",
+                              "textContent": "ADDRESS"
+                            }
+                          ],
+                          "classList": [
+                            "info-label"
+                          ],
+                          "layout": {
+                            "cell": {
+                              "type": "box-item"
+                            }
+                          },
+                          "name": "div"
+                        },
+                        {
+                          "children": [
+                            {
+                              "evaluate": true,
+                              "name": "text",
+                              "textContent": "$ctrl.contact.address"
+                            }
+                          ],
+                          "classList": [
+                            "info-value"
+                          ],
+                          "layout": {
+                            "cell": {
+                              "type": "box-item"
+                            }
+                          },
+                          "name": "div"
+                        }
+                      ],
+                      "classList": [
+                        "info-item"
+                      ],
+                      "layout": {
+                        "cell": {
+                          "type": "box-item"
+                        },
+                        "container": {
+                          "orientation": "column",
+                          "type": "box"
+                        }
+                      },
+                      "name": "div"
+                    }
+                  ],
+                  "classList": [
+                    "info-grid"
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "box-item"
+                    },
+                    "container": {
+                      "gap": "24px",
+                      "orientation": "column",
+                      "type": "box"
+                    }
+                  },
+                  "name": "div"
+                },
+                {
+                  "children": [
+                    {
+                      "attributes": [
+                        {
+                          "property": "core",
+                          "value": ""
+                        }
+                      ],
+                      "children": [],
+                      "classList": [],
+                      "expressions": [
+                        {
+                          "expression": "'Edit'",
+                          "to": "label"
+                        },
+                        {
+                          "expression": "'primary'",
+                          "to": "type"
+                        },
+                        {
+                          "expression": "$ctrl.goToEdit()",
+                          "to": "onClick"
+                        }
+                      ],
+                      "layout": {
+                        "cell": {
+                          "growFactor": 0,
+                          "mainSize": "auto",
+                          "shrinkFactor": 0,
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "Button",
+                      "nodeName": "bln-button",
+                      "type": "core-component"
+                    },
+                    {
+                      "attributes": [
+                        {
+                          "property": "core",
+                          "value": ""
+                        }
+                      ],
+                      "children": [],
+                      "classList": [],
+                      "expressions": [
+                        {
+                          "expression": "'Delete'",
+                          "to": "label"
+                        },
+                        {
+                          "expression": "'secondary'",
+                          "to": "type"
+                        },
+                        {
+                          "expression": "$ctrl.deleteContact()",
+                          "to": "onClick"
+                        }
+                      ],
+                      "layout": {
+                        "cell": {
+                          "growFactor": 0,
+                          "mainSize": "auto",
+                          "shrinkFactor": 0,
+                          "type": "box-item"
+                        }
+                      },
+                      "name": "Button",
+                      "nodeName": "bln-button",
+                      "type": "core-component"
+                    }
+                  ],
+                  "classList": [
+                    "action-bar"
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "box-item"
+                    },
+                    "container": {
+                      "crossAxisAlignment": "center",
+                      "gap": "16px",
+                      "mainAxisAlignment": "center",
+                      "orientation": "row",
+                      "type": "box"
+                    }
+                  },
+                  "name": "div"
+                }
+              ],
+              "classList": [],
+              "displayExpression": "$ctrl.contact",
+              "layout": {
+                "cell": {
+                  "type": "box-item"
+                },
+                "container": {
+                  "gap": "32px",
+                  "orientation": "column",
+                  "type": "box"
+                }
+              },
+              "name": "div"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "evaluate": false,
+                      "name": "text",
+                      "textContent": "Contact not found."
+                    }
+                  ],
+                  "classList": [],
+                  "name": "p",
+                  "styles": [
+                    {
+                      "enabled": true,
+                      "property": "text-align",
+                      "value": "center"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "color",
+                      "value": "#888"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "font-style",
+                      "value": "italic"
+                    }
+                  ]
+                }
+              ],
+              "classList": [],
+              "displayExpression": "!$ctrl.contact",
+              "layout": {
+                "cell": {
+                  "type": "box-item"
+                }
+              },
+              "name": "div"
+            }
+          ],
+          "classList": [
+            "details-panel"
+          ],
+          "layout": {
+            "cell": {
+              "mainSize": "100%",
+              "type": "box-item"
+            },
+            "container": {
+              "gap": "24px",
+              "orientation": "column",
+              "type": "box"
+            }
+          },
+          "name": "div",
+          "styles": [
+            {
+              "enabled": true,
+              "property": "width",
+              "value": "100%"
+            },
+            {
+              "enabled": true,
+              "property": "max-width",
+              "value": "600px"
+            }
+          ]
+        }
+      ],
+      "classList": [],
+      "layout": {
+        "container": {
+          "crossAxisAlignment": "center",
+          "mainAxisAlignment": "flex-start",
+          "orientation": "column",
+          "type": "box"
+        }
+      },
+      "name": "div",
+      "styles": [
+        {
+          "enabled": true,
+          "property": "width",
+          "value": "100%"
+        },
+        {
+          "enabled": true,
+          "property": "height",
+          "value": "100%"
+        },
+        {
+          "enabled": true,
+          "property": "padding",
+          "value": "24px"
+        },
+        {
+          "enabled": true,
+          "property": "box-sizing",
+          "value": "border-box"
+        }
+      ]
+    }
+  ],
+  "name": "contact-details",
+  "params": {
+    "id": ""
+  },
+  "parentPageName": "contacts",
+  "type": "page",
+  "url": "/:id",
+  "variables": [
+    {
+      "description": "The resolved contact",
+      "name": "contact",
+      "type": "property",
+      "value": "null"
+    },
+    {
+      "name": "$state",
+      "type": "service"
+    },
+    {
+      "body": "const id = ($ctrl.pageParameters && $ctrl.pageParameters.id) ? String($ctrl.pageParameters.id) : '';\nif (!id) {\n  $ctrl.contact = null;\n  return;\n}\nconst contacts = JSON.parse(localStorage.getItem('contacts') || '[]');\n$ctrl.contact = contacts.find(function(c) { return c && c.id === id; }) || null;",
+      "description": "Resolves the contact from the URL parameter",
+      "invokeOnLoad": true,
+      "isAsync": false,
+      "name": "resolveContact",
+      "parameters": [],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": [
+        "$ctrl.pageParameters.id"
+      ]
+    },
+    {
+      "body": "if ($ctrl.contact && $ctrl.contact.id) {\n  $ctrl.$state.go('contacts.contact-edit', { id: $ctrl.contact.id });\n}",
+      "description": "Navigate to edit page",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "goToEdit",
+      "parameters": [],
+      "returnType": {
+        "name": "void"
+      },
+      "type": "method",
+      "watch": []
+    },
+    {
+      "body": "if (!$ctrl.contact || !$ctrl.contact.id) return;\nconst contacts = JSON.parse(localStorage.getItem('contacts') || '[]');\nconst updatedContacts = contacts.filter(function(c) { return c.id !== $ctrl.contact.id; });\nlocalStorage.setItem('contacts', JSON.stringify(updatedContacts));\n$ctrl.$state.go('contacts', {}, { reload: true });",
+      "description": "Delete the contact",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "deleteContact",
+      "parameters": [],
+      "returnType": {
+        "name": "void"
+      },
+      "type": "method",
+      "watch": []
+    },
+    {
+      "body": "$ctrl.$state.go('contacts');",
+      "description": "Navigate back to the contacts list",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "goBack",
+      "parameters": [],
+      "returnType": {
+        "name": "void"
+      },
+      "type": "method",
+      "watch": []
+    }
+  ]
+}

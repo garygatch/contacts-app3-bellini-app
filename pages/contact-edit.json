@@ -1,0 +1,497 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": [
+                {
+                  "property": "core",
+                  "value": ""
+                }
+              ],
+              "children": [],
+              "classList": [],
+              "expressions": [
+                {
+                  "expression": "'⟵ Back'",
+                  "to": "label"
+                },
+                {
+                  "expression": "'default'",
+                  "to": "type"
+                },
+                {
+                  "expression": "$ctrl.cancelEdit()",
+                  "to": "onClick"
+                }
+              ],
+              "layout": {
+                "cell": {
+                  "crossAxisAlignment": "flex-start",
+                  "growFactor": 0,
+                  "mainSize": "max-content",
+                  "shrinkFactor": 0,
+                  "type": "box-item"
+                }
+              },
+              "name": "Button",
+              "nodeName": "bln-button",
+              "type": "core-component"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "evaluate": false,
+                      "name": "text",
+                      "textContent": "Edit Contact"
+                    }
+                  ],
+                  "classList": [],
+                  "name": "h2",
+                  "styles": [
+                    {
+                      "enabled": true,
+                      "property": "margin",
+                      "value": "0"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "font-size",
+                      "value": "24px"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "font-weight",
+                      "value": "700"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "color",
+                      "value": "var(--text-primary)"
+                    }
+                  ]
+                }
+              ],
+              "classList": [
+                "form-header"
+              ],
+              "layout": {
+                "cell": {
+                  "growFactor": 0,
+                  "mainSize": "max-content",
+                  "shrinkFactor": 0,
+                  "type": "box-item"
+                }
+              },
+              "name": "div",
+              "styles": [
+                {
+                  "enabled": true,
+                  "property": "margin-bottom",
+                  "value": "24px"
+                },
+                {
+                  "enabled": true,
+                  "property": "padding-bottom",
+                  "value": "24px"
+                },
+                {
+                  "enabled": true,
+                  "property": "border-bottom",
+                  "value": "1px solid var(--border-color)"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'Name'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "$ctrl.editContact.name",
+                      "to": "value"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  },
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "max-content",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "type": "core-component"
+                },
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'Phone'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "$ctrl.editContact.phone",
+                      "to": "value"
+                    },
+                    {
+                      "expression": "'text'",
+                      "to": "type"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  },
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "max-content",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "type": "core-component"
+                },
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'Email'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "$ctrl.editContact.email",
+                      "to": "value"
+                    },
+                    {
+                      "expression": "'email'",
+                      "to": "type"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  },
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "max-content",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "type": "core-component"
+                },
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'Address'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "$ctrl.editContact.address",
+                      "to": "value"
+                    },
+                    {
+                      "expression": "'text-area'",
+                      "to": "type"
+                    },
+                    {
+                      "expression": "3",
+                      "to": "rows"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  },
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "max-content",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "type": "core-component"
+                }
+              ],
+              "classList": [
+                "form-container"
+              ],
+              "layout": {
+                "cell": {
+                  "growFactor": 0,
+                  "mainSize": "max-content",
+                  "shrinkFactor": 0,
+                  "type": "box-item"
+                },
+                "container": {
+                  "crossAxisAlignment": "stretch",
+                  "gap": "24px",
+                  "orientation": "column",
+                  "type": "box"
+                }
+              },
+              "name": "div"
+            },
+            {
+              "children": [
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'Save Changes'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "'primary'",
+                      "to": "type"
+                    },
+                    {
+                      "expression": "$ctrl.updateContact()",
+                      "to": "onClick"
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "auto",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Button",
+                  "nodeName": "bln-button",
+                  "type": "core-component"
+                },
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [],
+                  "expressions": [
+                    {
+                      "expression": "'Cancel'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "'default'",
+                      "to": "type"
+                    },
+                    {
+                      "expression": "$ctrl.cancelEdit()",
+                      "to": "onClick"
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "growFactor": 0,
+                      "mainSize": "auto",
+                      "shrinkFactor": 0,
+                      "type": "box-item"
+                    }
+                  },
+                  "name": "Button",
+                  "nodeName": "bln-button",
+                  "type": "core-component"
+                }
+              ],
+              "classList": [
+                "action-bar",
+                "right"
+              ],
+              "layout": {
+                "cell": {
+                  "growFactor": 0,
+                  "mainSize": "max-content",
+                  "shrinkFactor": 0,
+                  "type": "box-item"
+                },
+                "container": {
+                  "crossAxisAlignment": "center",
+                  "gap": "16px",
+                  "mainAxisAlignment": "flex-end",
+                  "orientation": "row",
+                  "type": "box"
+                }
+              },
+              "name": "div"
+            }
+          ],
+          "classList": [
+            "details-panel"
+          ],
+          "layout": {
+            "cell": {
+              "growFactor": 0,
+              "mainSize": "max-content",
+              "shrinkFactor": 0,
+              "type": "box-item"
+            },
+            "container": {
+              "crossAxisAlignment": "stretch",
+              "gap": "24px",
+              "orientation": "column",
+              "type": "box"
+            }
+          },
+          "name": "div",
+          "styles": [
+            {
+              "enabled": true,
+              "property": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ],
+      "classList": [],
+      "layout": {
+        "container": {
+          "crossAxisAlignment": "center",
+          "mainAxisAlignment": "flex-start",
+          "orientation": "column",
+          "type": "box"
+        }
+      },
+      "name": "div",
+      "styles": [
+        {
+          "enabled": true,
+          "property": "width",
+          "value": "100%"
+        },
+        {
+          "enabled": true,
+          "property": "height",
+          "value": "100%"
+        },
+        {
+          "enabled": true,
+          "property": "padding",
+          "value": "24px"
+        },
+        {
+          "enabled": true,
+          "property": "box-sizing",
+          "value": "border-box"
+        }
+      ]
+    }
+  ],
+  "name": "contact-edit",
+  "params": {
+    "id": ""
+  },
+  "parentPageName": "contacts",
+  "type": "page",
+  "url": "/:id/edit",
+  "variables": [
+    {
+      "name": "$state",
+      "type": "service"
+    },
+    {
+      "description": "The clone of the contact being edited.",
+      "name": "editContact",
+      "type": "property",
+      "value": "{}"
+    },
+    {
+      "body": "const id = $ctrl.pageParameters && $ctrl.pageParameters.id;\nif (!id) return;\nconst contacts = JSON.parse(localStorage.getItem('contacts') || '[]');\nconst found = contacts.find(function(c) { return String(c.id) === String(id); });\nif (found) {\n  $ctrl.editContact = Object.assign({}, found);\n} else {\n  $ctrl.editContact = {};\n}",
+      "description": "",
+      "invokeOnLoad": true,
+      "isAsync": false,
+      "name": "initEdit",
+      "parameters": [],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": []
+    },
+    {
+      "body": "const contacts = JSON.parse(localStorage.getItem('contacts') || '[]');\nconst index = contacts.findIndex(function(c) { return String(c.id) === String($ctrl.editContact.id); });\nif (index !== -1) {\n  contacts[index] = $ctrl.editContact;\n} else if ($ctrl.editContact.id) {\n  contacts.push($ctrl.editContact);\n}\nlocalStorage.setItem('contacts', JSON.stringify(contacts));\n$ctrl.$state.go('contacts.contact-details', { id: $ctrl.editContact.id }, { reload: true });",
+      "description": "",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "updateContact",
+      "parameters": [],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": []
+    },
+    {
+      "body": "$ctrl.$state.go('contacts.contact-details', { id: $ctrl.editContact.id });",
+      "description": "Navigate back to details without saving.",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "cancelEdit",
+      "parameters": [],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": []
+    }
+  ]
+}

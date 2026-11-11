@@ -1,0 +1,166 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "evaluate": false,
+                      "name": "text",
+                      "textContent": "Manage Contacts "
+                    },
+                    {
+                      "children": [
+                        {
+                          "evaluate": false,
+                          "name": "text",
+                          "textContent": "Beautifully"
+                        }
+                      ],
+                      "classList": [],
+                      "name": "span"
+                    }
+                  ],
+                  "classList": [
+                    "hero-title"
+                  ],
+                  "name": "h1"
+                },
+                {
+                  "children": [
+                    {
+                      "evaluate": false,
+                      "name": "text",
+                      "textContent": "The modern way to sync and manage your address book."
+                    }
+                  ],
+                  "classList": [
+                    "hero-subtitle"
+                  ],
+                  "name": "p"
+                },
+                {
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "children": [],
+                  "classList": [
+                    "hero-btn"
+                  ],
+                  "expressions": [
+                    {
+                      "expression": "'Go to Contacts'",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "'primary'",
+                      "to": "type"
+                    },
+                    {
+                      "expression": "$ctrl.goToContacts()",
+                      "to": "onClick"
+                    }
+                  ],
+                  "name": "Button",
+                  "nodeName": "bln-button",
+                  "type": "core-component"
+                }
+              ],
+              "classList": [],
+              "name": "div"
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "classList": [
+                    "hero-blob"
+                  ],
+                  "name": "div"
+                },
+                {
+                  "children": [
+                    {
+                      "evaluate": false,
+                      "name": "text",
+                      "textContent": "Your Contacts, Supercharged."
+                    }
+                  ],
+                  "classList": [
+                    "hero-card"
+                  ],
+                  "name": "div",
+                  "styles": [
+                    {
+                      "enabled": true,
+                      "property": "font-weight",
+                      "value": "600"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "font-size",
+                      "value": "1.5rem"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "color",
+                      "value": "var(--text-primary)"
+                    }
+                  ]
+                }
+              ],
+              "classList": [
+                "hero-visual"
+              ],
+              "name": "div"
+            }
+          ],
+          "classList": [
+            "hero-content"
+          ],
+          "name": "div"
+        }
+      ],
+      "classList": [
+        "hero"
+      ],
+      "name": "div"
+    }
+  ],
+  "name": "home",
+  "params": {},
+  "type": "page",
+  "url": "/home",
+  "variables": [
+    {
+      "name": "$state",
+      "type": "service"
+    },
+    {
+      "body": "$ctrl.$state.go('contacts');",
+      "description": "Navigates to the contacts page",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "name": "goToContacts",
+      "parameters": [],
+      "returnType": {
+        "name": "any"
+      },
+      "type": "method",
+      "watch": []
+    },
+    {
+      "id": "open-api",
+      "name": "pet",
+      "resourceIdentity": "apis/pet",
+      "type": "open-api"
+    }
+  ]
+}
